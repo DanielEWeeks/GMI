@@ -379,7 +379,7 @@ print NQUE "\$wget_prog=\"".$wget_prog."\";\n";
 
 #3) version number
 print NQUE "\n# GMI version number.\n";
-print NQUE "\$gmi_version=\"1.5\";\n";
+print NQUE "\$gmi_version=\"1.6\";\n";
 
 #4) user's e-mail
 print NQUE "\n# GMI user e-mail.\n";

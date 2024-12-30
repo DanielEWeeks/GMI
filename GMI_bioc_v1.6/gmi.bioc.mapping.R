@@ -75,6 +75,7 @@ snp.bioc.querysnps <- function(snpfile, request.from, output.warnings, use.alias
 {
   library(biomaRt)
   library(XML)
+  library(rentrez)
 
   snpmart <- useMart("ENSEMBL_MART_SNP", dataset = "hsapiens_snp")
   
@@ -297,12 +298,14 @@ snp.bioc.querysnps <- function(snpfile, request.from, output.warnings, use.alias
       cat(paste("Resolving aliases ",
                 as.character(round(ncbi.end.index/num.mis * 100),0),
                 "%\r", sep=""))
-      URL <-
-        paste("http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?",
-              "tool=GMI&email=", request.from, "&db=snp&report=XML&id=",
-              idlist,"&retmode=xml",sep="")
+      # URL <-
+      #  paste("http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?",
+      #        "tool=GMI&email=", request.from, "&db=snp&report=XML&id=",
+      #        idlist,"&retmode=xml",sep="")
+      snpinfo <- entrez_fetch(db="snp", id=idlist, rettype="xml", parsed=FALSE, retmode = "xml")
       
-      z <- xmlTreeParse(URL,useInternalNode=T)
+      z <- xmlTreeParse(snpinfo, useInternalNode=TRUE)
+      # z <- xmlTreeParse(URL,useInternalNode=T)
       ns <- getDefaultNamespace(xmlRoot(z))
       namespaces <- c(ns=ns)
 
@@ -314,9 +317,14 @@ snp.bioc.querysnps <- function(snpfile, request.from, output.warnings, use.alias
       ## 2) merge history is not empty, but does not contain the searched name(!)
         
       if (length(namespaces) > 0) {
-        els <- getNodeSet(z,"//ns:Rs",namespaces)      
-        rsID <- sapply(els,xmlGetAttr,"rsId")
-
+        # els <- getNodeSet(z,"//ns:Rs",namespaces)      
+        # rsID <- sapply(els,xmlGetAttr,"rsId")
+        els <- getNodeSet(z, "//ns:DocumentSummary", namespaces)
+        
+        rsID <- sapply(els, function(x) {
+          snp_id <- xmlValue(getNodeSet(x, ".//ns:SNP_ID", namespaces)[[1]])
+          snp_id
+        })
         ## Found some merged SNP names
         if (length(which(oldID %in% rsID)) > 0) {
 

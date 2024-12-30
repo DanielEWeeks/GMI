@@ -1,7 +1,8 @@
 # Genetic Map Interpolator (GMI)
 
 Bioconductor version          
-Version 1.5 February 10, 2016
+Version 1.5 February 10, 2016      
+Version 1.6 December 30, 2024
 
 Originally written by Xinyu Tang and Nandita Mukhopadhyay under the supervision of Daniel E. Weeks. Updated by Robert V. Baron.
 
@@ -29,9 +30,48 @@ of a marker's chromosome is not required to run GMI.
 
 Please note that GMI relies crucially upon the Rutgers Combined Linkage-Physical Map, created by Tara Matise and colleagues (Matise et al., 2007; Kong et al., 2004; Kong and Matise, 2004), and we would like to thank them for making this important well-validated framework map available to the scientific community. GMI would not be possible without it.
 
-# Documentation
+# Version 1.5 Documentation
 
 Please see the PDF file [GMI_manual_v1.5.pdf](https://github.com/DanielEWeeks/GMI/blob/main/GMI_bioc_v1.5/GMI_manual_v1.5.pdf) for complete documentation.
+
+# Version 1.6 Documentation
+
+As NCBI has retired the web-based eutils query web site, to get GMI (partially) working again, we had to replace that with a query implemented using the `rentrez` R package.
+
+So you will need to install the `rentrez` R package.
+
+It is partially working because it appears that the MergeHistory part is not returned by this new query.  
+
+So using the test example file `snp_list.txt`, Version 1.5 figured out and reported on this renaming of one of the SNPs, returning 
+
+```
+  WARNINGS FROM INTERPOLATION
+---------------------------------------------------
+   Names of the following SNPs have merged:
+---------------------------------------------------
+Old     New
+rs1234455       rs854057
+---------------------------------------------------
+```
+
+in the `snp_mapped_log.txt` file, but now Version 1.6 fails to identify this SNP rsID merging, and instead reports that:
+
+```
+  WARNINGS FROM INTERPOLATION
+---------------------------------------------------
+   Names of the following SNPs have merged:
+---------------------------------------------------
+Old     New
+---------------------------------------------------
+ 
+---------------------------------------------------
+   SNPs not found in Ensembl:
+---------------------------------------------------
+rs1234455
+---------------------------------------------------
+```
+
+Hopefully if you are using a relatively recent set of SNPs, all of them will have current up-to-date names. 
 
 # Contact
 
