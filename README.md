@@ -1,7 +1,6 @@
 # Genetic Map Interpolator (GMI)
 
-Bioconductor version
-
+Bioconductor version          
 Version 1.5 February 10, 2016
 
 Originally written by Xinyu Tang and Nandita Mukhopadhyay under the supervision of Daniel E. Weeks. Updated by Robert V. Baron.
@@ -29,3 +28,12 @@ GMI has a number of useful features (see Figure 1 in the manual 'GMI_manual_v1.5
 of a marker's chromosome is not required to run GMI.
 
 Please note that GMI relies crucially upon the Rutgers Combined Linkage-Physical Map, created by Tara Matise and colleagues (Matise et al., 2007; Kong et al., 2004; Kong and Matise, 2004), and we would like to thank them for making this important well-validated framework map available to the scientific community. GMI would not be possible without it.
+
+# Documentation
+
+Please see [GMI_manual_v1.5.pdf](https://github.com/DanielEWeeks/GMI/blob/main/GMI_bioc_v1.5/GMI_manual_v1.5.pdf) for complete documentation.
+
+# Contact
+
+Daniel E. Weeks       
+weeks@pitt.edu        
