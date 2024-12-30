@@ -5,7 +5,7 @@ Version 1.5 February 10, 2016
 
 Originally written by Xinyu Tang and Nandita Mukhopadhyay under the supervision of Daniel E. Weeks. Updated by Robert V. Baron.
 
-Copyright © 2010-16 by Xinyu Tang, Nandita Mukhopadhyay, Robert V. Baron, Daniel E. Weeks, and the University of Pittsburgh.
+Copyright © 2010-24 by Xinyu Tang, Nandita Mukhopadhyay, Robert V. Baron, Daniel E. Weeks, and the University of Pittsburgh.
 
 Supported by NIH grant R01GM076667 "Mega2: Manipulation Environment for Genetic Analyses" (PI Daniel E. Weeks) and the University of Pittsburgh.
 
@@ -31,7 +31,7 @@ Please note that GMI relies crucially upon the Rutgers Combined Linkage-Physical
 
 # Documentation
 
-Please see [GMI_manual_v1.5.pdf](https://github.com/DanielEWeeks/GMI/blob/main/GMI_bioc_v1.5/GMI_manual_v1.5.pdf) for complete documentation.
+Please see the PDF file [GMI_manual_v1.5.pdf](https://github.com/DanielEWeeks/GMI/blob/main/GMI_bioc_v1.5/GMI_manual_v1.5.pdf) for complete documentation.
 
 # Contact
 
