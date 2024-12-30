@@ -1,0 +1,4 @@
+Chromosome	Map.k.a	Name	Map.k.m	Map.k.f	Ensembl57.p	X.Extrapolation
+Y	NA	rs2566671	NA	NA	5755550	NA
+Y	NA	rs2075181	NA	NA	7546726	NA
+Y	NA	rs2268591	NA	NA	24464597	NA

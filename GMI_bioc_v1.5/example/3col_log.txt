@@ -1,0 +1,93 @@
+---------------------------------------------------
+   GMI version 1.0
+   Run date:        5 May 28 14:34:23 2010
+   Input file:      snp_list_3col.txt
+   GMI options:
+      Output map files contain user's SNP names.
+      Graphical output files created.
+---------------------------------------------------
+
+Reading in data as per options to GMI:
+   Input SNP file does not have a header line.
+   Reading SNP IDs from column 1, chromosomes from column 2, user positions from column 3
+---------------------------------------------------
+
+First 5 lines of data read in from snp_list_3col.txt:
+   SNP-name(column 1), Chromosome(column 2)	Position(column 3)
+   rs6679445		1			240942076
+   rs6713305		2			177855789
+   rs1879804		3			125560353
+   rs6787513		3			155686602
+   rs6862022		5			160037922
+---------------------------------------------------
+
+SNPs with unrecognized chromosome numbers and/or positions
+(chromosome numbers set to "U" and positions set to "NA")
+---------------------------------------------------
+
+rs4451579
+rs1234455
+---------------------------------------------------
+
+  WARNINGS FROM INTERPOLATION
+---------------------------------------------------
+   Names of the following SNPs have merged:
+---------------------------------------------------
+Old	New
+rs1234455	rs854057
+---------------------------------------------------
+ 
+---------------------------------------------------
+  SNPs on Y, MT or unknown chromosomes (User records):
+---------------------------------------------------
+Name	User.chr	User.p
+rs4451579	U	NA
+rs1234455	U	NA
+---------------------------------------------------
+ 
+---------------------------------------------------
+   SNPs with inconsistent Ensembl and User physical positions:
+---------------------------------------------------
+Name	User.chr	User.p	User.Map.k.a	User.Map.k.f	User.Map.k.m	User.Extrapolation	Ensembl.chr	Ensembl.p	Ensembl.Map.k.a	Ensembl.Map.k.f	Ensembl.Map.k.m	Extrapolation
+rs6679445	1	240942076	263.9442	344.0451	187.3606	0	1	242875453	269.3765	348.2916	194.1398	0
+rs12094001	1	246156874	278.4221	354.857	205.8335	0	1	248090251	281.5089	357.5789	209.0345	1
+rs1933162	1	246245652	278.6498	355.0457	206.0951	0	1	248179029	281.5948	357.6648	209.0774	1
+rs7537031	1	246409460	279.0698	355.3939	206.5777	0	1	248342837	281.7533	357.8233	209.1567	1
+rs10888327	1	246429202	279.1204	355.4359	206.6359	0	1	248362579	281.7724	357.8424	209.1662	1
+rs2050481	14	40141385	40.1032	41.2066	39.5732	0	14	41071635	40.4533	41.29	40.0416	0
+rs9944233	15	23337098	1.8686	1.9515	1.7871	0	15	25786005	6.1668	6.378	5.917	0
+rs2934467	16	83528924	114.4439	141.1317	89.939	0	16	84971423	121.0994	150.0774	94.1398	0
+rs6713305	2	177855789	184.5231	237.3531	133.6204	0	2	178147543	184.8313	237.7008	133.8818	0
+rs1879804	3	125560353	133.6064	167.8211	101.9584	0	3	124077663	131.9522	165.7007	100.6258	0
+rs6787513	3	155686602	165.7928	212.2667	121.9074	0	3	154203908	164.8238	211.8365	120.5712	0
+rs6862022	5	160037922	168.8454	215.4291	124.2886	0	5	160105344	168.8877	215.4773	124.3278	0
+rs1457266	8	24825757	45.7974	47.7395	44.8464	0	8	24769852	45.7689	47.6989	44.8042	0
+rs7840334	8	53276984	66.8914	80.7379	54.0524	0	8	53114431	66.63	80.23	54.04	0
+rs16875341	8	108018022	116.908	159.118	76.754	0	8	107948846	116.848	159.045	76.7045	0
+---------------------------------------------------
+ 
+---------------------------------------------------
+   SNPs with extrapolated map positions (Ensembl records):
+---------------------------------------------------
+Name	Chromosome	Ensembl.p	Map.k.a	Map.k.f	Map.k.m	Extrapolation
+rs12094001	1	248090251	281.5089	357.5789	209.0345	1
+rs1933162	1	248179029	281.5948	357.6648	209.0774	1
+rs7537031	1	248342837	281.7533	357.8233	209.1567	1
+rs10888327	1	248362579	281.7724	357.8424	209.1662	1
+rs4451579	1	248487016	281.8929	357.9629	209.2264	1
+---------------------------------------------------
+ 
+---------------------------------------------------
+   SUMMARY OF WARNINGS FROM INTERPOLATION
+---------------------------------------------------
+  -> Some SNP names have changed in Ensembl.
+     Map files contain old SNP names.
+  -> Found SNPs on Y, MT or unknown chromosomes in user records.
+  -> Some SNPs have inconsistent Ensembl and user-supplied physical positions.
+  -> 5 Markers on chromosome 1 have extrapolated map positions (Ensembl records).
+---------------------------------------------------
+In addition, input file contained problem SNPs:
+  -> Unrecognized chromosomes or physical positions (see top of log file)
+    (chromosome numbers and positions have been set to unknown)
+---------------------------------------------------
+

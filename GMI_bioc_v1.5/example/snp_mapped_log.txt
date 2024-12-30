@@ -1,0 +1,49 @@
+---------------------------------------------------
+   GMI version 1.4
+   Run date:        3 Feb 10 15:25:3 2016
+   Input file:      snp_list.txt
+   GMI options:
+      Output map files contain user's SNP names.
+      Graphical output files created.
+---------------------------------------------------
+
+Reading in data as per options to GMI:
+   Input SNP file does not have a header line.
+   Reading SNP IDs from column 1
+---------------------------------------------------
+
+First 5 lines of data read in from snp_list.txt:
+   SNP-name(column 1)
+   rs6679445
+   rs6713305
+   rs1879804
+   rs6787513
+   rs6862022
+---------------------------------------------------
+
+  WARNINGS FROM INTERPOLATION
+---------------------------------------------------
+   Names of the following SNPs have merged:
+---------------------------------------------------
+Old	New
+rs1234455	rs854057
+---------------------------------------------------
+ 
+---------------------------------------------------
+   SNPs with extrapolated map positions:
+---------------------------------------------------
+Name	Chromosome	Ensembl.p	Map.k.a	Map.k.f	Map.k.m	Extrapolation
+rs12094001	1	247926949	281.5089	357.5789	209.0345	1
+rs1933162	1	248015727	281.5948	357.6648	209.0774	1
+rs7537031	1	248179535	281.7533	357.8233	209.1567	1
+rs10888327	1	248199277	281.7724	357.8424	209.1662	1
+rs4451579	1	248323714	281.8929	357.9629	209.2264	1
+---------------------------------------------------
+ 
+---------------------------------------------------
+   SUMMARY OF WARNINGS FROM INTERPOLATION
+---------------------------------------------------
+  -> Some SNP names have changed in Ensembl.
+     Map files contain old SNP names.
+  -> 5 Markers on chromosome 1 have extrapolated map positions.
+---------------------------------------------------

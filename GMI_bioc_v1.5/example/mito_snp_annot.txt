@@ -1,0 +1,3 @@
+Chromosome	Map.k.a	Name	Map.k.m	Map.k.f	Ensembl57.p	X.Extrapolation
+MT	NA	rs28358286	NA	NA	11674	NA
+U	NA	rs74586330	NA	NA	NA	NA

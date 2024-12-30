@@ -1,0 +1,49 @@
+---------------------------------------------------
+   GMI version 1.0
+   Run date:        5 May 28 14:32:46 2010
+   Input file:      mito_snp_list.txt
+   GMI options:
+      Output map files contain user's SNP names.
+      Graphical output files created.
+---------------------------------------------------
+
+Reading in data as per options to GMI:
+   Input SNP file does not have a header line.
+   Reading SNP IDs from column 1
+---------------------------------------------------
+
+First 2 lines of data read in from mito_snp_list.txt:
+   SNP-name(column 1)
+   rs28358286
+   rs74586330
+---------------------------------------------------
+
+  WARNINGS FROM INTERPOLATION
+---------------------------------------------------
+   Names of the following SNPs have merged:
+---------------------------------------------------
+Old	New
+---------------------------------------------------
+ 
+---------------------------------------------------
+   SNPs not found in Ensembl:
+---------------------------------------------------
+rs74586330
+---------------------------------------------------
+ 
+---------------------------------------------------
+  SNPs on Y, MT or unknown chromosomes:
+---------------------------------------------------
+Name	Ensembl.chr	Ensembl.p
+rs28358286	MT	11674
+---------------------------------------------------
+ 
+---------------------------------------------------
+   SUMMARY OF WARNINGS FROM INTERPOLATION
+---------------------------------------------------
+  -> Some SNP names have changed in Ensembl.
+     Map files contain old SNP names.
+  -> One or more SNP(s) not found in Ensembl.
+  -> Found SNPs on Y, MT or unknown chromosomes.
+  -> No plots were created, as no mapped SNPs were found.
+---------------------------------------------------

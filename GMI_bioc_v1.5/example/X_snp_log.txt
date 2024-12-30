@@ -1,0 +1,26 @@
+---------------------------------------------------
+   GMI version 1.0
+   Run date:        5 May 28 14:32:4 2010
+   Input file:      X_snp_list.txt
+   GMI options:
+      Output map files contain user's SNP names.
+      Graphical output files created.
+---------------------------------------------------
+
+Reading in data as per options to GMI:
+   Input SNP file does not have a header line.
+   Reading SNP IDs from column 1
+---------------------------------------------------
+
+First 5 lines of data read in from X_snp_list.txt:
+   SNP-name(column 1)
+   rs1131288
+   rs13648
+   rs6638937
+   rs12387201
+   rs73446851
+---------------------------------------------------
+
+  WARNINGS FROM INTERPOLATION
+---------------------------------------------------
+---------------------------------------------------

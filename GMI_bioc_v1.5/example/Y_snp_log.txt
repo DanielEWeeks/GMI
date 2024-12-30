@@ -1,0 +1,38 @@
+---------------------------------------------------
+   GMI version 1.0
+   Run date:        5 May 28 14:32:22 2010
+   Input file:      Y_snp_list.txt
+   GMI options:
+      Output map files contain user's SNP names.
+      Graphical output files created.
+---------------------------------------------------
+
+Reading in data as per options to GMI:
+   Input SNP file does not have a header line.
+   Reading SNP IDs from column 1
+---------------------------------------------------
+
+First 3 lines of data read in from Y_snp_list.txt:
+   SNP-name(column 1)
+   rs2075181
+   rs2268591
+   rs2566671
+---------------------------------------------------
+
+  WARNINGS FROM INTERPOLATION
+---------------------------------------------------
+---------------------------------------------------
+  SNPs on Y, MT or unknown chromosomes:
+---------------------------------------------------
+Name	Ensembl.chr	Ensembl.p
+rs2075181	Y	7546726
+rs2268591	Y	24464597
+rs2566671	Y	5755550
+---------------------------------------------------
+ 
+---------------------------------------------------
+   SUMMARY OF WARNINGS FROM INTERPOLATION
+---------------------------------------------------
+  -> Found SNPs on Y, MT or unknown chromosomes.
+  -> No plots were created, as no mapped SNPs were found.
+---------------------------------------------------
