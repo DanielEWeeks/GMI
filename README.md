@@ -34,13 +34,15 @@ Please note that GMI relies crucially upon the Rutgers Combined Linkage-Physical
 
 Please see the PDF file [GMI_manual_v1.5.pdf](https://github.com/DanielEWeeks/GMI/blob/main/GMI_bioc_v1.5/GMI_manual_v1.5.pdf) for complete documentation.
 
+NOTE: As detailed below, this Version 1.5 documentation is a bit out-of-date, and in addition to installing the required software listed in the Version 1.5 documentation, **you will also need to install the `rentrez` R package**.
+
 # Version 1.6 Documentation
 
 As NCBI has retired the web-based eutils query web site, to get GMI (partially) working again, we had to replace that with a query implemented using the `rentrez` R package.
 
 So you will need to install the `rentrez` R package.
 
-It is partially working because it appears that the MergeHistory part is not returned by this new query.  
+GMI is only partially working because it appears that the `MergeHistory` part of the `snp` database is not returned by this new query. So if you are using an old rsID that has subsequently been merged to a new rsID, GMI will fail to identify this.  Instead it will report that your rsID was not found.  
 
 So using the test example file `snp_list.txt`, Version 1.5 figured out and reported on this renaming of one of the SNPs, returning 
 
